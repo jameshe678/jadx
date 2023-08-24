@@ -28,6 +28,7 @@ public class DeobfCondition implements IRenameCondition {
 
 		for (PackageNode pkg : root.getPackages()) {
 			avoidClsNames.add(pkg.getPkgInfo().getName());
+			System.out.println("Avoid " + pkg.getPkgInfo().getName());
 		}
 	}
 
