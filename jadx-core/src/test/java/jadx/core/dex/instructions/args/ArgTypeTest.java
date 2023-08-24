@@ -28,6 +28,8 @@ class ArgTypeTest {
 
 		ArgType type = ArgType.generic("java.lang.List", wildcard);
 		assertTrue(type.containsTypeVariable());
+
+		ArgType wildcard2 = ArgType.wildcard(ArgType.genericType("T"), ArgType.WildcardBound
 	}
 
 	@Test
