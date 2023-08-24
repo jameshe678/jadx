@@ -21,6 +21,7 @@ public class AccessInfoTest {
 		assertThat(result.isProtected(), is(false));
 
 		assertThat(result.isStatic(), is(true));
+		assertThat(result.isFinal(), is(false));
 	}
 
 	@Test
